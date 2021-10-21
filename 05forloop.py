@@ -1,6 +1,6 @@
 print(""" ------------------------------------------------
 |                                                |
-|    05forLoop                                   |
+|    05HelloWorld                                |
 |    Name : Trisha Win                           |
 |    Version : 01                                |
 |                                                |
