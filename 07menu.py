@@ -53,6 +53,10 @@ def end():
 
 def enter():
     input("Press Enter to continue")
+    os.system('cls')
+
+def enter2():
+    input("Press Enter to continue")
 
 print(""" ------------------------------------------------
 |                                                |
@@ -62,43 +66,50 @@ print(""" ------------------------------------------------
 |                                                |
 ------------------------------------------------""")
 
-os.system('cls')
-menu()
+answer = ""
 
-answer = input("Enter an option ")
+while answer != "x":
+    menu()
 
-if answer == "1":
-    start()
-    hello_world()
-    end()
-    enter()
-elif answer == "2":
-    start()
-    goodbye_world()
-    end()
-    enter()
-elif answer == "3":
-    start()
-    goodbye_person()
-    end()
-    enter()
-elif answer == "4":
-    start()
-    good_teacher()
-    end()
-    enter()
-elif answer == "5":
-    start()
-    for_loop()
-    end()
-    enter()
-elif answer == "6":
-    start()
-    while_loop()
-    end()
-    enter()
-else:
-    start()
-    unknown()
-    end()
-    enter()
+    answer = input("Enter an option ")
+
+    if answer == "1":
+        start()
+        hello_world()
+        end()
+        enter()
+    elif answer == "2":
+        start()
+        goodbye_world()
+        end()
+        enter()
+    elif answer == "3":
+        start()
+        goodbye_person()
+        end()
+        enter()
+    elif answer == "4":
+        start()
+        good_teacher()
+        end()
+        enter()
+    elif answer == "5":
+        start()
+        for_loop()
+        end()
+        enter()
+    elif answer == "6":
+        start()
+        while_loop()
+        end()
+        enter()
+    elif answer == "x":
+        start()
+        x()
+        end()
+        enter2()
+    else:
+        start()
+        unknown()
+        end()
+        enter()
