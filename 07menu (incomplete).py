@@ -1,4 +1,9 @@
 import os
+
+def menu():
+    print("""\n1. Hello World\n2. Goodbye World\n3. Goodbye Person\n4. Good Teacher\n5. forLoop\n6. whileLoop\n7. string Loop\n8. Convert to ascii\n9. Encode a string\nx. To Exit""")
+
+
 def hello_world():
     print("""Hello World""")
 
@@ -49,56 +54,51 @@ def end():
 def enter():
     input("Press Enter to continue")
 
-    print(""" ------------------------------------------------
-    |                                                |
-    |    07Menu                                      |
-    |    Name : Trisha Win                           |
-    |    Version : 01                                |
-    |                                                |
-    ------------------------------------------------""")
+print(""" ------------------------------------------------
+|                                                |
+|    07Menu                                      |
+|    Name : Trisha Win                           |
+|    Version : 01                                |
+|                                                |
+------------------------------------------------""")
 
-    os.system('cls')
-    print("""\n1. Hello World\n2. Goodbye World\n3. Goodbye Person\n4. Good Teacher\n5. forLoop\n6. whileLoop\n7. string Loop\n8. Convert to ascii\n9. Encode a string\nx. To Exit""")
+os.system('cls')
+menu()
 
-    answer = input("Enter an option ")
+answer = input("Enter an option ")
 
-    if answer == "1":
-        start()
-        hello_world()
-        end()
-        enter()
-    elif answer == "2":
-        start()
-        goodbye_world()
-        end()
-        enter()
-    elif answer == "3":
-        start()
-        goodbye_person()
-        end()
-        enter()
-    elif answer == "4":
-        start()
-        good_teacher()
-        end()
-        enter()
-    elif answer == "5":
-        start()
-        for_loop()
-        end()
-        enter()
-    elif answer == "6":
-        start()
-        while_loop()
-        end()
-        enter()
-    elif answer != "1" and answer != "2" and answer != "3" and answer != "4" and answer != "5" and answer != "6" and answer != "x":
-        start()
-        unknown()
-        end()
-        enter()
+if answer == "1":
+    start()
+    hello_world()
+    end()
+    enter()
+elif answer == "2":
+    start()
+    goodbye_world()
+    end()
+    enter()
+elif answer == "3":
+    start()
+    goodbye_person()
+    end()
+    enter()
+elif answer == "4":
+    start()
+    good_teacher()
+    end()
+    enter()
+elif answer == "5":
+    start()
+    for_loop()
+    end()
+    enter()
+elif answer == "6":
+    start()
+    while_loop()
+    end()
+    enter()
 else:
     start()
-    x()
+    unknown()
     end()
     enter()
