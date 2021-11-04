@@ -49,9 +49,6 @@ def end():
 def enter():
     input("Press Enter to continue")
 
-answer = ""
-
-while answer != "x":
     print(""" ------------------------------------------------
     |                                                |
     |    07Menu                                      |
