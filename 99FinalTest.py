@@ -39,6 +39,24 @@ def while_loop():
 
     print("\n\nCongratulations!!\n\n")
 
+def string_loop():
+    my_string = input("What is your string? ")
+    for i, v in enumerate(my_string):
+        print(v)
+
+def convert_to_ascii():
+    my_ascii = input("What is your string? ")
+    for i, v in enumerate(my_ascii):
+        print(v + "=" + str(ord(v)))
+
+def encode_a_string():
+    encoded = [""]
+    encode = input("What is your string? ")
+    for v in encode:
+        print(v + " = " + chr((ord(v)+1)))
+        encoded.append(chr((ord(v)+1)))
+        print(*encoded, sep = "")
+
 def unknown():
     print("invalid option")
 
@@ -101,6 +119,21 @@ while answer != "x":
     elif answer == "6":
         start()
         while_loop()
+        end()
+        enter()
+    elif answer == "7":
+        start()
+        string_loop()
+        end()
+        enter()
+    elif answer == "8":
+        start()
+        convert_to_ascii()
+        end()
+        enter()
+    elif answer == "9":
+        start()
+        encode_a_string()
         end()
         enter()
     elif answer == "x":
